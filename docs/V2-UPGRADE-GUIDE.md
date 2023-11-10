@@ -1,19 +1,9 @@
-# Upgrade to @tomphttp/bare-server-node v2.x
+# Upgrade to Ultraviolet v2.x
 
-@tomphttp/bare-server-node v2.x brings about many changes that provide a more stable API. However, many of these changes mean that apps written for @tomphttp/bare-server-node v1.x needs to be updated to work with @tomphttp/bare-server-node v2.x. This document helps you make this transition.
+## No support for older Bare servers.
 
-## No more default exports
+In order to more effectively use newer APIs provided by newer implementations of bare-client, support folder older Bare servers has been dropped.
 
-In v2.x, the way you import the library has been updated for better maintainability.
+You need to upgrade your Bare server in order to use Ultraviolet.
 
-You should import `createBareServer` using named imports instead.
-
-Use the following code snippet to update the way you import the library:
-
-```js
-// old way
-import createBareServer from '@tomphttp/bare-server-node';
-
-// new way
-import { createBareServer } from '@tomphttp/bare-server-node';
-```
+See the [Bare server node upgrade guide](https://github.com/tomphttp/bare-server-node/blob/master/docs/V2-UPGRADE-GUIDE.md) for upgrading your Bare server.
